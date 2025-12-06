@@ -7,25 +7,51 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
     <style>
         body {
-            background: #111;
-            color: white;
+            background-color: #f8f9fa;
+            color: #333;
+            font-family: 'Arial', sans-serif;
         }
 
-        .btn-container {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-            width: 300px;
-            margin: 30px auto;
+        .navbar {
+            background-color: #007bff;
+        }
+
+        .navbar-brand {
+            color: white;
+            font-size: 1.8rem;
+        }
+
+        .navbar-nav .nav-link {
+            color: white !important;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #63b3ff !important;
+        }
+
+        .hero-section {
+            background: #ff9f00;
+            padding: 50px 0;
+            color: white;
+            text-align: center;
+        }
+
+        .hero-section h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        .hero-section p {
+            font-size: 1.3rem;
+            margin-bottom: 40px;
         }
 
         .btn-custom {
             padding: 12px;
-            background: #1e90ff;
-            color: white !important;
+            background-color: #1e90ff;
+            color: white;
             text-decoration: none;
             border-radius: 8px;
             font-size: 18px;
@@ -36,53 +62,58 @@
         .btn-custom:hover {
             background: #63b3ff;
         }
+
+        .section-title {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .content-section {
+            padding: 60px 0;
+        }
+
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
     </style>
 </head>
 
 <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
-
-            <a class="navbar-brand fw-bold" href="#">
-                <i class="fa-solid fa-paw text-warning me-2"></i>
-                Adopta un Amigo
-            </a>
-
+            <a class="navbar-brand" href="#">Adopta un Amigo</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-
                     <li class="nav-item">
                         <a class="nav-link" href="#inicio">Inicio</a>
                     </li>
-
                     <li class="nav-item">
                         <a class="nav-link" href="#perros">Perros</a>
                     </li>
-
                     <li class="nav-item">
                         <a class="nav-link" href="#procesos">Proceso</a>
                     </li>
-
                     <li class="nav-item">
                         <a class="nav-link" href="#contacto">Contacto</a>
                     </li>
-
                 </ul>
             </div>
-
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section id="inicio" class="text-center" style="padding-top: 120px;">
-        <h1 class="fw-bold">¡Bienvenido a Adopta un Amigo!</h1>
-        <p class="mt-3">Encuentra a tu compañero ideal ❤️</p>
+    <section id="inicio" class="hero-section">
+        <h1>¡Bienvenido a Adopta un Amigo!</h1>
+        <p>Encuentra a tu compañero ideal para toda la vida ❤️</p>
 
         <!-- BOTONES DE SECCIONES INTERNAS -->
         <div class="mt-4">
@@ -102,26 +133,30 @@
     </section>
 
     <!-- Perros Section -->
-    <section id="perros" class="container my-5">
-        <h2 class="fw-bold mb-4">Perros en adopción</h2>
-        <p>Aquí irá la lista de perritos 😄</p>
+    <section id="perros" class="container content-section">
+        <h2 class="section-title">Perros en adopción</h2>
+        <p>Aquí puedes encontrar a los perritos listos para ser adoptados y brindarles un nuevo hogar.</p>
     </section>
 
     <!-- Proceso Section -->
-    <section id="procesos" class="container my-5">
-        <h2 class="fw-bold mb-4">Proceso de adopción</h2>
-        <p>Explicación del proceso...</p>
+    <section id="procesos" class="container content-section">
+        <h2 class="section-title">Proceso de adopción</h2>
+        <p>El proceso de adopción es simple y claro. Te explicamos paso a paso lo que necesitas saber.</p>
     </section>
 
-    <!-- Contacto -->
-    <section id="contacto" class="container my-5">
-        <h2 class="fw-bold mb-4">Contacto</h2>
-        <p>Información de contacto aquí...</p>
+    <!-- Contacto Section -->
+    <section id="contacto" class="container content-section">
+        <h2 class="section-title">Contacto</h2>
+        <p>Para más información o si deseas hacer una consulta, puedes contactarnos a través de este formulario.</p>
     </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Adopta un Amigo. Todos los derechos reservados.</p>
+    </footer>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
 </body>
 </html>
